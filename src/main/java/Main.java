@@ -4,6 +4,8 @@
 // In fact if a field is marked as final but not initialised in its declaration then it must be set in all constructors. https://stackoverflow.com/questions/4189045/can-i-make-a-variable-final-after-it-has-been-declared
 // A blank final instance variable must be definitely assigned at the end of every constructor of the class in which it is declared; otherwise a compile-time error occurs. https://stackoverflow.com/questions/11345061/why-must-a-final-variable-be-initialized-before-constructor-completes
 // https://stackoverflow.com/questions/54196305/array-tostring-returns-a-memory-address-not-actual-values
+// Waarom geen unit test voor setSiblings, setChildren, setPets, setFather, setMother, e.a.
+// Bonusopdrachten overgeslagen
 public class Main {
 
     public static void main(String[] args) {
@@ -32,6 +34,4 @@ public class Main {
         System.out.println("getPets(): " + andre.getPets()); // Hoe krijg je hier normale namen? Met @Override toString (Zie in Pet.class)
         System.out.println("Jopie's owner is: " + jopie.getOwner().getName());
     }
-
-
 }

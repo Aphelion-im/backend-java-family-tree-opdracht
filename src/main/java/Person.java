@@ -113,12 +113,11 @@ public class Person {
         father.addChildToChildren(father, child);
     }
 
+    // Hoe deze method opvatten?!
     public void addChildToChildren(Person parent, Person child) {
         List<Person> kids = new ArrayList<>();
         if (parent.getChildren() != null) {
-            for (Person person : parent.getChildren()) {
-                kids.add(person);
-            }
+            kids.addAll(parent.getChildren());
         }
         kids.add(child);
         parent.setChildren(kids);
@@ -159,10 +158,7 @@ public class Person {
         }
         return grandChildren;
     }
-
-
 }
-
 
 //    public void printPets() {
 //        System.out.println(this.name + " has the following pets:");
